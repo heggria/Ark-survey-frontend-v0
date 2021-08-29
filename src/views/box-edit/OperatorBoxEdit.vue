@@ -1,12 +1,14 @@
 <template>
 	<div class="edit">
 		<el-row>
-			<el-col :span="12" class="operator-img">
-				<img
-					style="width: 10pc; height: 10pc"
+			<el-col :span="12">
+				<div
+					v-if="operator"
+					class="operator-img"
+					:class="operator.key"
 					@click="editDialog = true"
-					alt="单击以编辑"
-				/>
+				></div>
+				<div v-else class="operator-choose" @click="editDialog = true">单击选择干员</div>
 			</el-col>
 			<el-col :span="12">
 				<el-form size="mini">
@@ -84,6 +86,8 @@
 					v-if="operatorBox.skills"
 					v-for="count in operatorBox.skills.length"
 					:key="count"
+					:skill-key="operator.skills[count - 1].k"
+					:skill-name="operator.skills[count - 1].n"
 					:elite-level="operatorBox.eliteLevel"
 					:skill-level="operatorBox.skills[count - 1]"
 					@skill-up="operatorBox.skills[count - 1]++"
@@ -155,7 +159,7 @@
 const MAX_PROTENTIAL_LEVEL = 5
 const MAX_NORAML_SKILL_LEVEL = 7
 
-import { reactive, computed, onMounted, ref, watch } from 'vue'
+import { reactive } from 'vue'
 import { getExpMaxLevel } from '@/utils/operator'
 import SelectOperator from '@/components/SelectOperator.vue'
 import Skill from '@/components/Skill.vue'
@@ -163,7 +167,7 @@ import type { IOperatorLight, IOperatorBox } from '@/global/entity/operator'
 import { useStore } from 'vuex'
 const store = useStore()
 
-ref: editDialog = false
+let editDialog = $ref(false)
 
 const changeSkillLevel = (val: number) => {
 	for (let i = 0; i < operatorBox.skills.length; ++i)
@@ -172,13 +176,13 @@ const changeSkillLevel = (val: number) => {
 			operatorBox.skills[i] = val
 }
 
-ref: operatorBox = computed(() => {
+let operatorBox = $computed(() => {
 	let focusIndex = store.state.userBox.focusIndex
 	let operatorBox: IOperatorBox = store.state.userBox.box[focusIndex]
 	return operatorBox
 })
 
-ref: operator = computed(() => {
+let operator = $computed(() => {
 	let focusIndex = store.state.userBox.focusIndex
 	let operatorId = store.state.userBox.box[focusIndex]
 		? store.state.userBox.box[focusIndex].operatorId
@@ -193,7 +197,7 @@ ref: operator = computed(() => {
 const changEliteLevel = (level: number) => {
 	operatorBox.eliteLevel = level
 }
-ref: expMaxLevel = computed(() =>
+let expMaxLevel = $computed(() =>
 	getExpMaxLevel(operatorBox.eliteLevel, operator ? operator.rate : 0)
 )
 
@@ -215,6 +219,19 @@ const setOperatorLevel = (elite: number, exp: number, skill: number, potential: 
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/OperatorImage/operatorImgOrigin.scss';
+.operator-img {
+	border: 1px solid black;
+	@include operatorOrigin;
+	zoom: 1.3;
+}
+.operator-choose {
+	width: 130px;
+	height: 130px;
+	border: 1px solid black;
+	line-height: 130px;
+	text-align: center;
+}
 .level-button-box {
 	display: flex;
 	flex-direction: row;
