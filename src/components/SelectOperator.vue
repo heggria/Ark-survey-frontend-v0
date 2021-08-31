@@ -37,9 +37,9 @@ import { computed, reactive, watch } from 'vue'
 import { useStore } from 'vuex'
 const store = useStore()
 
-ref: index = computed(() => store.state.userBox.focusIndex)
-ref: operators = computed(() => store.state.operators.operatorsLight)
-ref: selectedOperator = computed(() => store.state.userBox.box[index])
+let index = $computed(() => store.state.userBox.focusIndex)
+let operators = $computed(() => store.state.operators.operatorsLight)
+let selectedOperator = $computed(() => store.state.userBox.box[index])
 
 const form = reactive({
 	rates: [undefined, true, true, true, true, true, true] as boolean[]
@@ -48,7 +48,7 @@ const setStars = (rate: number) => {
 	form.rates[rate] = !form.rates[rate]
 }
 
-ref: suitableOperators = computed(() => {
+let suitableOperators = $computed(() => {
 	return operators.filter((operator: IOperatorLight) => {
 		let flag = true
 		store.state.userBox.box.forEach((box: IOperatorBox) => {
@@ -59,7 +59,7 @@ ref: suitableOperators = computed(() => {
 	})
 })
 
-watch(form, (form) => {
+watch($raw(form), (form) => {
 	suitableOperators = operators.filter((operator: IOperatorLight) => {
 		let flag = true
 		flag = flag && form.rates[operator.rate] // * 稀有度筛选

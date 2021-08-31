@@ -35,7 +35,7 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted, ref, reactive, computed, watch } from 'vue'
+import { onMounted, reactive, watch } from 'vue'
 import { useStore } from 'vuex'
 const store = useStore()
 onMounted(() => {
@@ -47,13 +47,13 @@ onMounted(() => {
 	store.commit('userBox/reset', 1)
 })
 
-import userControl from '@/components/UserControl.vue'
+import UserControl from '@/components/UserControl.vue'
 import { useRoute } from 'vue-router'
 const route = useRoute()
 
-ref: path = computed(() => route.fullPath)
+let path = $computed(() => route.fullPath)
 
-ref: show = false
+let show = $ref(false)
 const items = reactive([
 	{
 		icon: 'el-icon-edit',

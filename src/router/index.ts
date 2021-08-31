@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import Home from '@/views/Home.vue'
-import BoxEdit from '@/views/box-edit/BoxEdit.vue'
+import BoxEdit from '@/views/box-edit/Main.vue'
 import Login from '@/views/Login.vue'
 import Register from '@/views/Register.vue'
 

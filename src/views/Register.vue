@@ -118,9 +118,9 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, reactive, onMounted, computed } from 'vue'
+import { reactive, onMounted, computed } from 'vue'
 
-ref: registerForm = ref<any>()
+let registerForm = $ref<any>(null)
 const form = reactive({
 	username: '',
 	nickname: '',

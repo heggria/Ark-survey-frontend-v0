@@ -42,9 +42,9 @@ import store from '@/store'
 import message from '@/utils/message'
 import { ref, reactive, onMounted } from 'vue'
 
-ref: loginForm = ref<any>()
-ref: userCheck = ''
-ref: pwdCheck = ''
+let loginForm = $ref<any>(null)
+let userCheck = $ref('')
+let pwdCheck = $ref('')
 const form = reactive({
 	username: '',
 	password: ''
