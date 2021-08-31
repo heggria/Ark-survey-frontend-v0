@@ -1,6 +1,9 @@
 <template>
 	<div class="skill">
-		<div class="img"></div>
+		<div>
+			<div class="skill-img" :class="skillKey"></div>
+			<div class="skill-name">{{ props.skillName }}</div>
+		</div>
 		<div class="button-group">
 			<el-button
 				type="text"
@@ -24,17 +27,20 @@
 <script lang="ts" setup>
 import { computed } from 'vue'
 const emit = defineEmits(['skill-up', 'skill-down'])
+let skillKey = $computed(() => props.skillKey?.replace(/\[/, '_').replace(/\]/, ''))
 
 const props = defineProps({
 	eliteLevel: Number,
-	skillLevel: Number
+	skillLevel: Number,
+	skillKey: String,
+	skillName: String
 })
-ref: upDisabled = computed(() => {
+let upDisabled = $computed(() => {
 	if (props.eliteLevel && props.eliteLevel < 2) return true
 	if (props.skillLevel && (props.skillLevel < 7 || props.skillLevel === 10)) return true
 	return false
 })
-ref: downDisabled = computed(() => {
+let downDisabled = $computed(() => {
 	if (props.eliteLevel && props.eliteLevel < 2) return true
 	if (props.skillLevel && props.skillLevel <= 7) return true
 	return false
@@ -42,17 +48,21 @@ ref: downDisabled = computed(() => {
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/SkillImage/skillImg.scss';
 .skill {
 	display: flex;
 	flex-direction: row;
-}
-.img {
-	width: 10vw;
-	height: 10vw;
-	border: 1px solid black;
+	.skill-img {
+		@include skill;
+		border: 1px solid black;
+		zoom: 1.4;
+	}
+	.skill-name {
+		text-align: center;
+	}
 }
 .button-group {
-	height: 10vw;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -64,8 +74,7 @@ ref: downDisabled = computed(() => {
 	}
 	span {
 		position: relative;
-		left: 50%;
-		margin-left: -5px;
+		text-align: center;
 	}
 }
 </style>
