@@ -7,7 +7,8 @@ export default defineConfig({
 	plugins: [
 		vue({
 			script: {
-				refSugar: true
+				refSugar: true,
+				refTransform: true
 			}
 		})
 	],
@@ -23,6 +24,9 @@ export default defineConfig({
 				changeOrigin: true,
 				rewrite: (path) => path.replace(/^\/api/, '')
 			}
+		},
+		fs: {
+			strict: false
 		}
 	},
 	publicDir: 'public/',

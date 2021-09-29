@@ -69,7 +69,6 @@ const submit = (): void => {
 	userApis
 		.login(form)
 		.then((response) => {
-			console.log(response)
 			message.success('登录成功!')
 			store.commit('user/login', {
 				id: response.data.id,

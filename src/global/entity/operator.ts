@@ -53,6 +53,8 @@ interface IOperator {
  * @param name 英文名
  * @param rate 星级
  * @param key 干员key值
+ * @param tags tag
+ * @param profession 职业
  * @param skills 干员技能
  */
 interface IOperatorLight {
@@ -61,6 +63,8 @@ interface IOperatorLight {
 	name: string
 	rate: number
 	key: string
+	tags: string[]
+	profession: string
 	skills: ISkill[]
 }
 export { IOperatorBox, ISkill, IOperator, IOperatorLight }

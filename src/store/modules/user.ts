@@ -14,7 +14,6 @@ const user = {
 	mutations: {
 		login(state: any, payload: any) {
 			state.id = payload.id
-			console.log(state.id)
 			storage.setItem({
 				name: 'token',
 				value: payload.token,
