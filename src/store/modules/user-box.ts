@@ -1,15 +1,14 @@
 import userBoxApis from '@/apis/user-box'
-import type { IOperatorBox } from '@/global/entity/operator'
+import type { IOperatorLight, IOperatorBox } from '@/global/entity/operator'
 const userBox = {
 	namespaced: true,
 	state: {
-		box: [],
-		focusIndex: 0
+		box: [] as IOperatorBox[]
 	},
 	mutations: {
-		addNewEmptyBox(state: any) {
+		addNewBox(state: any, operaorId: number) {
 			state.box.push({
-				operatorId: 0,
+				operatorId: operaorId,
 				potential: 0,
 				eliteLevel: 0,
 				expLevel: 0,
@@ -17,45 +16,27 @@ const userBox = {
 				skills: []
 			})
 		},
-		reset(state: any, payload: number) {
+		reset(state: any) {
 			state.box = []
-			for (let i = 0; i < payload; ++i)
-				state.box.push({
-					operatorId: 0,
-					potential: 0,
-					eliteLevel: 0,
-					expLevel: 0,
-					skillsLevel: 1,
-					skills: []
-				})
-		},
-		focusChange(state: any, payload: number) {
-			state.focusIndex = payload
 		},
 		selectOperator(state: any, payload: any) {
 			let { index, operatorId } = payload
 			state.box[index].operatorId = operatorId
 		},
-		setOperatorBox(state: any, payload: IOperatorBox) {
-			state.box[state.focusIndex] = {
-				operatorId: payload.operatorId,
-				potential: payload.potential,
-				eliteLevel: payload.eliteLevel,
-				expLevel: payload.expLevel,
-				skillsLevel: payload.skillsLevel,
-				skills: []
-			}
-			payload.skills.forEach((level: number) => {
-				state.box[state.focusIndex].skills.push(level)
-			})
+		setOperatorBoxes(state: any, boxes: IOperatorBox[]) {
+			state.box = boxes
 		},
-		setOperatorBoxes(state: any, payload: IOperatorBox[]) {
-			state.box = payload
+		deleteOperatorBox(state: any, id: number) {
+			let result = [] as IOperatorBox[]
+			state.box.forEach((box: IOperatorBox) => {
+				if (box.operatorId !== id) result.push(box)
+			})
+			state.box = result
 		}
 	},
 	actions: {
-		fetchUserBox(context: any, payload: number) {
-			userBoxApis.fetchUserBoxById(payload).then((response) => {
+		fetchUserBox(context: any, userId: number) {
+			userBoxApis.fetchUserBoxById(userId).then((response) => {
 				let data = response.data
 				let box = data.map((operator: any) => {
 					return {
@@ -67,8 +48,8 @@ const userBox = {
 						operatorId: operator.operatorId
 					} as IOperatorBox
 				})
-				if (box && box.length > 0) context.commit('setOperatorBoxes', box)
-				else context.commit('addNewEmptyBox')
+				if (box) context.commit('setOperatorBoxes', box)
+				else context.commit('setOperatorBoxes', [])
 			})
 		}
 	}

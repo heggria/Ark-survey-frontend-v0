@@ -168,7 +168,7 @@ const submit = (): void => {
 			}, 1000)
 		})
 		.catch((err) => {
-			console.log(err)
+			console.error(err)
 			let data = err.data
 			let message = data.message
 			let statusCode = Number(data.statusCode)

@@ -1,14 +1,8 @@
 <template>
-	<div class="edit">
+	<div class="edit" v-if="operatorBox">
 		<el-row>
 			<el-col :span="12">
-				<div
-					v-if="operator"
-					class="operator-img"
-					:class="operator.key"
-					@click="editDialog = true"
-				></div>
-				<div v-else class="operator-choose" @click="editDialog = true">单击选择干员</div>
+				<div v-if="operator" class="operator-img" :class="operator.key"></div>
 			</el-col>
 			<el-col :span="12">
 				<el-form size="mini">
@@ -144,30 +138,22 @@
 				<el-button size="small"> 删除选中 </el-button>
 			</el-col>
 		</el-row>
-		<el-dialog v-model="editDialog" title="请选择干员">
-			<select-operator @close-dialog="editDialog = false" />
-			<template #footer>
-				<span class="dialog-footer">
-					<el-button @click="editDialog = false">关 闭</el-button>
-				</span>
-			</template>
-		</el-dialog>
 	</div>
 </template>
 
 <script lang="ts" setup>
+import type { IOperatorLight, IOperatorBox } from '@/global/entity/operator'
+import { getExpMaxLevel } from '@/utils/operator'
+import { useStore } from 'vuex'
+import Skill from '@/components/Skill.vue'
+
 const MAX_PROTENTIAL_LEVEL = 5
 const MAX_NORAML_SKILL_LEVEL = 7
 
-import { reactive } from 'vue'
-import { getExpMaxLevel } from '@/utils/operator'
-import SelectOperator from '@/components/SelectOperator.vue'
-import Skill from '@/components/Skill.vue'
-import type { IOperatorLight, IOperatorBox } from '@/global/entity/operator'
-import { useStore } from 'vuex'
 const store = useStore()
-
-let editDialog = $ref(false)
+const props = defineProps({
+	operatorId: Number
+})
 
 const changeSkillLevel = (val: number) => {
 	for (let i = 0; i < operatorBox.skills.length; ++i)
@@ -177,28 +163,25 @@ const changeSkillLevel = (val: number) => {
 }
 
 let operatorBox = $computed(() => {
-	let focusIndex = store.state.userBox.focusIndex
-	let operatorBox: IOperatorBox = store.state.userBox.box[focusIndex]
+	let operatorBoxes: IOperatorBox[] = store.state.userBox.box
+	let operatorBox: IOperatorBox | undefined
+	operatorBoxes.forEach((box) => {
+		if (props.operatorId === box.operatorId) operatorBox = box
+	})
 	return operatorBox
 })
 
 let operator = $computed(() => {
-	let focusIndex = store.state.userBox.focusIndex
-	let operatorId = store.state.userBox.box[focusIndex]
-		? store.state.userBox.box[focusIndex].operatorId
-		: 0
+	let operatorId = props.operatorId ? props.operatorId : 0
 	let operator: IOperatorLight = store.state.operators.operatorsLight[operatorId - 1]
-	operatorBox.operatorId = operator ? operator.id : 0
-	if (operator && operatorBox.skills.length === 0)
-		for (let i = 0; i < operator.skills.length; ++i) operatorBox.skills.push(1)
 	return operator
 })
 
 const changEliteLevel = (level: number) => {
-	operatorBox.eliteLevel = level
+	if (operatorBox) operatorBox.eliteLevel = level
 }
 let expMaxLevel = $computed(() =>
-	getExpMaxLevel(operatorBox.eliteLevel, operator ? operator.rate : 0)
+	getExpMaxLevel(operatorBox ? operatorBox.eliteLevel : 0, operator ? operator.rate : 0)
 )
 
 const setOperatorLevel = (elite: number, exp: number, skill: number, potential: number = -1) => {
@@ -220,6 +203,7 @@ const setOperatorLevel = (elite: number, exp: number, skill: number, potential: 
 
 <style lang="scss" scoped>
 @import '@/assets/OperatorImage/operatorImgOrigin.scss';
+
 .operator-img {
 	border: 1px solid black;
 	@include operatorOrigin;

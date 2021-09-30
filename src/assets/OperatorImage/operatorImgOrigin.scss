@@ -1,1004 +1,609 @@
 @mixin operatorOrigin {
-	background-image: url('./operatorImgOrigin.png');
+	background-image: url(./operatorImgOrigin.png);
 	background-repeat: no-repeat;
+	width: 90px;
+	height: 90px;
 }
 .char_002_amiya {
-	width: 108px;
-	height: 108px;
 	background-position: 0px 0px;
 }
 .char_003_kalts {
-	width: 108px;
-	height: 108px;
-	background-position: -108px 0px;
+	background-position: -90px 0px;
 }
 .char_009_12fce {
-	width: 108px;
-	height: 108px;
-	background-position: -216px 0px;
+	background-position: -180px 0px;
 }
 .char_010_chen {
-	width: 108px;
-	height: 108px;
-	background-position: -324px 0px;
+	background-position: -270px 0px;
 }
 .char_017_huang {
-	width: 108px;
-	height: 108px;
-	background-position: -432px 0px;
+	background-position: -360px 0px;
 }
 .char_1011_lava2 {
-	width: 108px;
-	height: 108px;
-	background-position: -540px 0px;
+	background-position: -450px 0px;
 }
 .char_1012_skadi2 {
-	width: 108px;
-	height: 108px;
-	background-position: -648px 0px;
+	background-position: -540px 0px;
 }
 .char_1013_chen2 {
-	width: 108px;
-	height: 108px;
-	background-position: -756px 0px;
+	background-position: -630px 0px;
 }
 .char_101_sora {
-	width: 108px;
-	height: 108px;
-	background-position: -864px 0px;
+	background-position: -720px 0px;
 }
 .char_102_texas {
-	width: 108px;
-	height: 108px;
-	background-position: -972px 0px;
+	background-position: -810px 0px;
 }
 .char_103_angel {
-	width: 108px;
-	height: 108px;
-	background-position: -1080px 0px;
+	background-position: -900px 0px;
 }
 .char_106_franka {
-	width: 108px;
-	height: 108px;
-	background-position: -1188px 0px;
+	background-position: -990px 0px;
 }
 .char_107_liskam {
-	width: 108px;
-	height: 108px;
-	background-position: -1296px 0px;
+	background-position: -1080px 0px;
 }
 .char_108_silent {
-	width: 108px;
-	height: 108px;
-	background-position: -1404px 0px;
+	background-position: -1170px 0px;
 }
 .char_109_fmout {
-	width: 108px;
-	height: 108px;
-	background-position: -1512px 0px;
+	background-position: -1260px 0px;
 }
 .char_110_deepcl {
-	width: 108px;
-	height: 108px;
-	background-position: 0px -108px;
+	background-position: 0px -90px;
 }
 .char_112_siege {
-	width: 108px;
-	height: 108px;
-	background-position: -108px -108px;
+	background-position: -90px -90px;
 }
 .char_113_cqbw {
-	width: 108px;
-	height: 108px;
-	background-position: -216px -108px;
+	background-position: -180px -90px;
 }
 .char_115_headbr {
-	width: 108px;
-	height: 108px;
-	background-position: -324px -108px;
+	background-position: -270px -90px;
 }
 .char_117_myrrh {
-	width: 108px;
-	height: 108px;
-	background-position: -432px -108px;
+	background-position: -360px -90px;
 }
 .char_118_yuki {
-	width: 108px;
-	height: 108px;
-	background-position: -540px -108px;
+	background-position: -450px -90px;
 }
 .char_120_hibisc {
-	width: 108px;
-	height: 108px;
-	background-position: -648px -108px;
+	background-position: -540px -90px;
 }
 .char_121_lava {
-	width: 108px;
-	height: 108px;
-	background-position: -756px -108px;
+	background-position: -630px -90px;
 }
 .char_122_beagle {
-	width: 108px;
-	height: 108px;
-	background-position: -864px -108px;
+	background-position: -720px -90px;
 }
 .char_123_fang {
-	width: 108px;
-	height: 108px;
-	background-position: -972px -108px;
+	background-position: -810px -90px;
 }
 .char_124_kroos {
-	width: 108px;
-	height: 108px;
-	background-position: -1080px -108px;
+	background-position: -900px -90px;
 }
 .char_126_shotst {
-	width: 108px;
-	height: 108px;
-	background-position: -1188px -108px;
+	background-position: -990px -90px;
 }
 .char_127_estell {
-	width: 108px;
-	height: 108px;
-	background-position: -1296px -108px;
+	background-position: -1080px -90px;
 }
 .char_128_plosis {
-	width: 108px;
-	height: 108px;
-	background-position: -1404px -108px;
+	background-position: -1170px -90px;
 }
 .char_129_bluep {
-	width: 108px;
-	height: 108px;
-	background-position: -1512px -108px;
+	background-position: -1260px -90px;
 }
 .char_130_doberm {
-	width: 108px;
-	height: 108px;
-	background-position: 0px -216px;
+	background-position: 0px -180px;
 }
 .char_131_flameb {
-	width: 108px;
-	height: 108px;
-	background-position: -108px -216px;
+	background-position: -90px -180px;
 }
 .char_133_mm {
-	width: 108px;
-	height: 108px;
-	background-position: -216px -216px;
+	background-position: -180px -180px;
 }
 .char_134_ifrit {
-	width: 108px;
-	height: 108px;
-	background-position: -324px -216px;
+	background-position: -270px -180px;
 }
 .char_136_hsguma {
-	width: 108px;
-	height: 108px;
-	background-position: -432px -216px;
+	background-position: -360px -180px;
 }
 .char_137_brownb {
-	width: 108px;
-	height: 108px;
-	background-position: -540px -216px;
+	background-position: -450px -180px;
 }
 .char_140_whitew {
-	width: 108px;
-	height: 108px;
-	background-position: -648px -216px;
+	background-position: -540px -180px;
 }
 .char_141_nights {
-	width: 108px;
-	height: 108px;
-	background-position: -756px -216px;
+	background-position: -630px -180px;
 }
 .char_143_ghost {
-	width: 108px;
-	height: 108px;
-	background-position: -864px -216px;
+	background-position: -720px -180px;
 }
 .char_144_red {
-	width: 108px;
-	height: 108px;
-	background-position: -972px -216px;
+	background-position: -810px -180px;
 }
 .char_145_prove {
-	width: 108px;
-	height: 108px;
-	background-position: -1080px -216px;
+	background-position: -900px -180px;
 }
 .char_147_shining {
-	width: 108px;
-	height: 108px;
-	background-position: -1188px -216px;
+	background-position: -990px -180px;
 }
 .char_148_nearl {
-	width: 108px;
-	height: 108px;
-	background-position: -1296px -216px;
+	background-position: -1080px -180px;
 }
 .char_149_scave {
-	width: 108px;
-	height: 108px;
-	background-position: -1404px -216px;
+	background-position: -1170px -180px;
 }
 .char_150_snakek {
-	width: 108px;
-	height: 108px;
-	background-position: -1512px -216px;
+	background-position: -1260px -180px;
 }
 .char_151_myrtle {
-	width: 108px;
-	height: 108px;
-	background-position: 0px -324px;
+	background-position: 0px -270px;
 }
 .char_155_tiger {
-	width: 108px;
-	height: 108px;
-	background-position: -108px -324px;
+	background-position: -90px -270px;
 }
 .char_158_milu {
-	width: 108px;
-	height: 108px;
-	background-position: -216px -324px;
+	background-position: -180px -270px;
 }
 .char_159_peacok {
-	width: 108px;
-	height: 108px;
-	background-position: -324px -324px;
+	background-position: -270px -270px;
 }
 .char_163_hpsts {
-	width: 108px;
-	height: 108px;
-	background-position: -432px -324px;
+	background-position: -360px -270px;
 }
 .char_164_nightm {
-	width: 108px;
-	height: 108px;
-	background-position: -540px -324px;
+	background-position: -450px -270px;
 }
 .char_166_skfire {
-	width: 108px;
-	height: 108px;
-	background-position: -648px -324px;
+	background-position: -540px -270px;
 }
 .char_171_bldsk {
-	width: 108px;
-	height: 108px;
-	background-position: -756px -324px;
+	background-position: -630px -270px;
 }
 .char_172_svrash {
-	width: 108px;
-	height: 108px;
-	background-position: -864px -324px;
+	background-position: -720px -270px;
 }
 .char_173_slchan {
-	width: 108px;
-	height: 108px;
-	background-position: -972px -324px;
+	background-position: -810px -270px;
 }
 .char_174_slbell {
-	width: 108px;
-	height: 108px;
-	background-position: -1080px -324px;
+	background-position: -900px -270px;
 }
 .char_179_cgbird {
-	width: 108px;
-	height: 108px;
-	background-position: -1188px -324px;
+	background-position: -990px -270px;
 }
 .char_180_amgoat {
-	width: 108px;
-	height: 108px;
-	background-position: -1296px -324px;
+	background-position: -1080px -270px;
 }
 .char_181_flower {
-	width: 108px;
-	height: 108px;
-	background-position: -1404px -324px;
+	background-position: -1170px -270px;
 }
 .char_183_skgoat {
-	width: 108px;
-	height: 108px;
-	background-position: -1512px -324px;
+	background-position: -1260px -270px;
 }
 .char_185_frncat {
-	width: 108px;
-	height: 108px;
-	background-position: 0px -432px;
+	background-position: 0px -360px;
 }
 .char_187_ccheal {
-	width: 108px;
-	height: 108px;
-	background-position: -108px -432px;
+	background-position: -90px -360px;
 }
 .char_188_helage {
-	width: 108px;
-	height: 108px;
-	background-position: -216px -432px;
+	background-position: -180px -360px;
 }
 .char_190_clour {
-	width: 108px;
-	height: 108px;
-	background-position: -324px -432px;
+	background-position: -270px -360px;
 }
 .char_192_falco {
-	width: 108px;
-	height: 108px;
-	background-position: -432px -432px;
+	background-position: -360px -360px;
 }
 .char_193_frostl {
-	width: 108px;
-	height: 108px;
-	background-position: -540px -432px;
+	background-position: -450px -360px;
 }
 .char_195_glassb {
-	width: 108px;
-	height: 108px;
-	background-position: -648px -432px;
+	background-position: -540px -360px;
 }
 .char_196_sunbr {
-	width: 108px;
-	height: 108px;
-	background-position: -756px -432px;
+	background-position: -630px -360px;
 }
 .char_197_poca {
-	width: 108px;
-	height: 108px;
-	background-position: -864px -432px;
+	background-position: -720px -360px;
 }
 .char_198_blackd {
-	width: 108px;
-	height: 108px;
-	background-position: -972px -432px;
+	background-position: -810px -360px;
 }
 .char_199_yak {
-	width: 108px;
-	height: 108px;
-	background-position: -1080px -432px;
+	background-position: -900px -360px;
 }
 .char_2013_cerber {
-	width: 108px;
-	height: 108px;
-	background-position: -1188px -432px;
+	background-position: -990px -360px;
 }
 .char_2014_nian {
-	width: 108px;
-	height: 108px;
-	background-position: -1296px -432px;
+	background-position: -1080px -360px;
 }
 .char_2015_dusk {
-	width: 108px;
-	height: 108px;
-	background-position: -1404px -432px;
+	background-position: -1170px -360px;
 }
 .char_201_moeshd {
-	width: 108px;
-	height: 108px;
-	background-position: -1512px -432px;
+	background-position: -1260px -360px;
 }
 .char_202_demkni {
-	width: 108px;
-	height: 108px;
-	background-position: 0px -540px;
+	background-position: 0px -450px;
 }
 .char_204_platnm {
-	width: 108px;
-	height: 108px;
-	background-position: -108px -540px;
+	background-position: -90px -450px;
 }
 .char_208_melan {
-	width: 108px;
-	height: 108px;
-	background-position: -216px -540px;
+	background-position: -180px -450px;
 }
 .char_209_ardign {
-	width: 108px;
-	height: 108px;
-	background-position: -324px -540px;
+	background-position: -270px -450px;
 }
 .char_210_stward {
-	width: 108px;
-	height: 108px;
-	background-position: -432px -540px;
+	background-position: -360px -450px;
 }
 .char_211_adnach {
-	width: 108px;
-	height: 108px;
-	background-position: -540px -540px;
+	background-position: -450px -450px;
 }
 .char_212_ansel {
-	width: 108px;
-	height: 108px;
-	background-position: -648px -540px;
+	background-position: -540px -450px;
 }
 .char_213_mostma {
-	width: 108px;
-	height: 108px;
-	background-position: -756px -540px;
+	background-position: -630px -450px;
 }
 .char_214_kafka {
-	width: 108px;
-	height: 108px;
-	background-position: -864px -540px;
+	background-position: -720px -450px;
 }
 .char_215_mantic {
-	width: 108px;
-	height: 108px;
-	background-position: -972px -540px;
+	background-position: -810px -450px;
 }
 .char_218_cuttle {
-	width: 108px;
-	height: 108px;
-	background-position: -1080px -540px;
+	background-position: -900px -450px;
 }
 .char_219_meteo {
-	width: 108px;
-	height: 108px;
-	background-position: -1188px -540px;
+	background-position: -990px -450px;
 }
 .char_220_grani {
-	width: 108px;
-	height: 108px;
-	background-position: -1296px -540px;
+	background-position: -1080px -450px;
 }
 .char_222_bpipe {
-	width: 108px;
-	height: 108px;
-	background-position: -1404px -540px;
+	background-position: -1170px -450px;
 }
 .char_225_haak {
-	width: 108px;
-	height: 108px;
-	background-position: -1512px -540px;
+	background-position: -1260px -450px;
 }
 .char_226_hmau {
-	width: 108px;
-	height: 108px;
-	background-position: 0px -648px;
+	background-position: 0px -540px;
 }
 .char_230_savage {
-	width: 108px;
-	height: 108px;
-	background-position: -108px -648px;
+	background-position: -90px -540px;
 }
 .char_235_jesica {
-	width: 108px;
-	height: 108px;
-	background-position: -216px -648px;
+	background-position: -180px -540px;
 }
 .char_236_rope {
-	width: 108px;
-	height: 108px;
-	background-position: -324px -648px;
+	background-position: -270px -540px;
 }
 .char_237_gravel {
-	width: 108px;
-	height: 108px;
-	background-position: -432px -648px;
+	background-position: -360px -540px;
 }
 .char_240_wyvern {
-	width: 108px;
-	height: 108px;
-	background-position: -540px -648px;
+	background-position: -450px -540px;
 }
 .char_241_panda {
-	width: 108px;
-	height: 108px;
-	background-position: -648px -648px;
+	background-position: -540px -540px;
 }
 .char_242_otter {
-	width: 108px;
-	height: 108px;
-	background-position: -756px -648px;
+	background-position: -630px -540px;
 }
 .char_243_waaifu {
-	width: 108px;
-	height: 108px;
-	background-position: -864px -648px;
+	background-position: -720px -540px;
 }
 .char_248_mgllan {
-	width: 108px;
-	height: 108px;
-	background-position: -972px -648px;
+	background-position: -810px -540px;
 }
 .char_250_phatom {
-	width: 108px;
-	height: 108px;
-	background-position: -1080px -648px;
+	background-position: -900px -540px;
 }
 .char_252_bibeak {
-	width: 108px;
-	height: 108px;
-	background-position: -1188px -648px;
+	background-position: -990px -540px;
 }
 .char_253_greyy {
-	width: 108px;
-	height: 108px;
-	background-position: -1296px -648px;
+	background-position: -1080px -540px;
 }
 .char_254_vodfox {
-	width: 108px;
-	height: 108px;
-	background-position: -1404px -648px;
+	background-position: -1170px -540px;
 }
 .char_258_podego {
-	width: 108px;
-	height: 108px;
-	background-position: -1512px -648px;
+	background-position: -1260px -540px;
 }
 .char_260_durnar {
-	width: 108px;
-	height: 108px;
-	background-position: 0px -756px;
+	background-position: 0px -630px;
 }
 .char_261_sddrag {
-	width: 108px;
-	height: 108px;
-	background-position: -108px -756px;
+	background-position: -90px -630px;
 }
 .char_263_skadi {
-	width: 108px;
-	height: 108px;
-	background-position: -216px -756px;
+	background-position: -180px -630px;
 }
 .char_264_f12yin {
-	width: 108px;
-	height: 108px;
-	background-position: -324px -756px;
+	background-position: -270px -630px;
 }
 .char_265_sophia {
-	width: 108px;
-	height: 108px;
-	background-position: -432px -756px;
+	background-position: -360px -630px;
 }
 .char_271_spikes {
-	width: 108px;
-	height: 108px;
-	background-position: -540px -756px;
+	background-position: -450px -630px;
 }
 .char_272_strong {
-	width: 108px;
-	height: 108px;
-	background-position: -648px -756px;
+	background-position: -540px -630px;
 }
 .char_274_astesi {
-	width: 108px;
-	height: 108px;
-	background-position: -756px -756px;
+	background-position: -630px -630px;
 }
 .char_275_breeze {
-	width: 108px;
-	height: 108px;
-	background-position: -864px -756px;
+	background-position: -720px -630px;
 }
 .char_277_sqrrel {
-	width: 108px;
-	height: 108px;
-	background-position: -972px -756px;
+	background-position: -810px -630px;
 }
 .char_278_orchid {
-	width: 108px;
-	height: 108px;
-	background-position: -1080px -756px;
+	background-position: -900px -630px;
 }
 .char_279_excu {
-	width: 108px;
-	height: 108px;
-	background-position: -1188px -756px;
+	background-position: -990px -630px;
 }
 .char_281_popka {
-	width: 108px;
-	height: 108px;
-	background-position: -1296px -756px;
+	background-position: -1080px -630px;
 }
 .char_282_catap {
-	width: 108px;
-	height: 108px;
-	background-position: -1404px -756px;
+	background-position: -1170px -630px;
 }
 .char_283_midn {
-	width: 108px;
-	height: 108px;
-	background-position: -1512px -756px;
+	background-position: -1260px -630px;
 }
 .char_284_spot {
-	width: 108px;
-	height: 108px;
-	background-position: 0px -864px;
+	background-position: 0px -720px;
 }
 .char_285_medic2 {
-	width: 108px;
-	height: 108px;
-	background-position: -108px -864px;
+	background-position: -90px -720px;
+}
+.char_286_cast3 {
+	background-position: -180px -720px;
 }
 .char_289_gyuki {
-	width: 108px;
-	height: 108px;
-	background-position: -216px -864px;
+	background-position: -270px -720px;
 }
 .char_290_vigna {
-	width: 108px;
-	height: 108px;
-	background-position: -324px -864px;
+	background-position: -360px -720px;
 }
 .char_291_aglina {
-	width: 108px;
-	height: 108px;
-	background-position: -432px -864px;
+	background-position: -450px -720px;
 }
 .char_293_thorns {
-	width: 108px;
-	height: 108px;
-	background-position: -540px -864px;
+	background-position: -540px -720px;
 }
 .char_294_ayer {
-	width: 108px;
-	height: 108px;
-	background-position: -648px -864px;
+	background-position: -630px -720px;
 }
 .char_298_susuro {
-	width: 108px;
-	height: 108px;
-	background-position: -756px -864px;
+	background-position: -720px -720px;
 }
 .char_301_cutter {
-	width: 108px;
-	height: 108px;
-	background-position: -864px -864px;
+	background-position: -810px -720px;
 }
 .char_302_glaze {
-	width: 108px;
-	height: 108px;
-	background-position: -972px -864px;
+	background-position: -900px -720px;
 }
 .char_304_zebra {
-	width: 108px;
-	height: 108px;
-	background-position: -1080px -864px;
+	background-position: -990px -720px;
 }
 .char_306_leizi {
-	width: 108px;
-	height: 108px;
-	background-position: -1188px -864px;
+	background-position: -1080px -720px;
 }
 .char_308_swire {
-	width: 108px;
-	height: 108px;
-	background-position: -1296px -864px;
+	background-position: -1170px -720px;
 }
 .char_311_mudrok {
-	width: 108px;
-	height: 108px;
-	background-position: -1404px -864px;
+	background-position: -1260px -720px;
 }
 .char_325_bison {
-	width: 108px;
-	height: 108px;
-	background-position: -1512px -864px;
+	background-position: 0px -810px;
 }
 .char_326_glacus {
-	width: 108px;
-	height: 108px;
-	background-position: 0px -972px;
+	background-position: -90px -810px;
 }
 .char_328_cammou {
-	width: 108px;
-	height: 108px;
-	background-position: -108px -972px;
+	background-position: -180px -810px;
 }
 .char_332_archet {
-	width: 108px;
-	height: 108px;
-	background-position: -216px -972px;
+	background-position: -270px -810px;
 }
 .char_333_sidero {
-	width: 108px;
-	height: 108px;
-	background-position: -324px -972px;
+	background-position: -360px -810px;
 }
 .char_336_folivo {
-	width: 108px;
-	height: 108px;
-	background-position: -432px -972px;
+	background-position: -450px -810px;
 }
 .char_337_utage {
-	width: 108px;
-	height: 108px;
-	background-position: -540px -972px;
+	background-position: -540px -810px;
 }
 .char_338_iris {
-	width: 108px;
-	height: 108px;
-	background-position: -648px -972px;
+	background-position: -630px -810px;
 }
 .char_340_shwaz {
-	width: 108px;
-	height: 108px;
-	background-position: -756px -972px;
+	background-position: -720px -810px;
 }
 .char_343_tknogi {
-	width: 108px;
-	height: 108px;
-	background-position: -864px -972px;
+	background-position: -810px -810px;
 }
 .char_344_beewax {
-	width: 108px;
-	height: 108px;
-	background-position: -972px -972px;
+	background-position: -900px -810px;
 }
 .char_345_folnic {
-	width: 108px;
-	height: 108px;
-	background-position: -1080px -972px;
+	background-position: -990px -810px;
 }
 .char_346_aosta {
-	width: 108px;
-	height: 108px;
-	background-position: -1188px -972px;
+	background-position: -1080px -810px;
 }
 .char_347_jaksel {
-	width: 108px;
-	height: 108px;
-	background-position: -1296px -972px;
+	background-position: -1170px -810px;
 }
 .char_348_ceylon {
-	width: 108px;
-	height: 108px;
-	background-position: -1404px -972px;
+	background-position: -1260px -810px;
 }
 .char_349_chiave {
-	width: 108px;
-	height: 108px;
-	background-position: -1512px -972px;
+	background-position: 0px -900px;
 }
 .char_350_surtr {
-	width: 108px;
-	height: 108px;
-	background-position: 0px -1080px;
+	background-position: -90px -900px;
 }
 .char_355_ethan {
-	width: 108px;
-	height: 108px;
-	background-position: -108px -1080px;
+	background-position: -180px -900px;
 }
 .char_356_broca {
-	width: 108px;
-	height: 108px;
-	background-position: -216px -1080px;
+	background-position: -270px -900px;
 }
 .char_358_lisa {
-	width: 108px;
-	height: 108px;
-	background-position: -324px -1080px;
+	background-position: -360px -900px;
 }
 .char_362_saga {
-	width: 108px;
-	height: 108px;
-	background-position: -432px -1080px;
+	background-position: -450px -900px;
 }
 .char_363_toddi {
-	width: 108px;
-	height: 108px;
-	background-position: -540px -1080px;
+	background-position: -540px -900px;
 }
 .char_365_aprl {
-	width: 108px;
-	height: 108px;
-	background-position: -648px -1080px;
+	background-position: -630px -900px;
 }
 .char_366_acdrop {
-	width: 108px;
-	height: 108px;
-	background-position: -756px -1080px;
+	background-position: -720px -900px;
 }
 .char_367_swllow {
-	width: 108px;
-	height: 108px;
-	background-position: -864px -1080px;
+	background-position: -810px -900px;
 }
 .char_369_bena {
-	width: 108px;
-	height: 108px;
-	background-position: -972px -1080px;
+	background-position: -900px -900px;
 }
 .char_373_lionhd {
-	width: 108px;
-	height: 108px;
-	background-position: -1080px -1080px;
+	background-position: -990px -900px;
 }
 .char_376_therex {
-	width: 108px;
-	height: 108px;
-	background-position: -1188px -1080px;
+	background-position: -1080px -900px;
 }
 .char_378_asbest {
-	width: 108px;
-	height: 108px;
-	background-position: -1296px -1080px;
+	background-position: -1170px -900px;
 }
 .char_379_sesa {
-	width: 108px;
-	height: 108px;
-	background-position: -1404px -1080px;
+	background-position: -1260px -900px;
 }
 .char_381_bubble {
-	width: 108px;
-	height: 108px;
-	background-position: -1512px -1080px;
+	background-position: 0px -990px;
 }
 .char_383_snsant {
-	width: 108px;
-	height: 108px;
-	background-position: 0px -1188px;
+	background-position: -90px -990px;
 }
 .char_385_finlpp {
-	width: 108px;
-	height: 108px;
-	background-position: -108px -1188px;
+	background-position: -180px -990px;
 }
 .char_388_mint {
-	width: 108px;
-	height: 108px;
-	background-position: -216px -1188px;
+	background-position: -270px -990px;
 }
 .char_391_rosmon {
-	width: 108px;
-	height: 108px;
-	background-position: -324px -1188px;
+	background-position: -360px -990px;
 }
 .char_400_weedy {
-	width: 108px;
-	height: 108px;
-	background-position: -432px -1188px;
+	background-position: -450px -990px;
 }
 .char_401_elysm {
-	width: 108px;
-	height: 108px;
-	background-position: -540px -1188px;
+	background-position: -540px -990px;
 }
 .char_402_tuye {
-	width: 108px;
-	height: 108px;
-	background-position: -648px -1188px;
+	background-position: -630px -990px;
 }
 .char_405_absin {
-	width: 108px;
-	height: 108px;
-	background-position: -756px -1188px;
+	background-position: -720px -990px;
 }
 .char_411_tomimi {
-	width: 108px;
-	height: 108px;
-	background-position: -864px -1188px;
+	background-position: -810px -990px;
 }
 .char_415_flint {
-	width: 108px;
-	height: 108px;
-	background-position: -972px -1188px;
+	background-position: -900px -990px;
 }
 .char_416_zumama {
-	width: 108px;
-	height: 108px;
-	background-position: -1080px -1188px;
+	background-position: -990px -990px;
 }
 .char_421_crow {
-	width: 108px;
-	height: 108px;
-	background-position: -1188px -1188px;
+	background-position: -1080px -990px;
 }
 .char_423_blemsh {
-	width: 108px;
-	height: 108px;
-	background-position: -1296px -1188px;
+	background-position: -1170px -990px;
 }
 .char_426_billro {
-	width: 108px;
-	height: 108px;
-	background-position: -1404px -1188px;
+	background-position: -1260px -990px;
 }
 .char_436_whispr {
-	width: 108px;
-	height: 108px;
-	background-position: -1512px -1188px;
+	background-position: 0px -1080px;
 }
 .char_437_mizuki {
-	width: 108px;
-	height: 108px;
-	background-position: 0px -1296px;
+	background-position: -90px -1080px;
 }
 .char_440_pinecn {
-	width: 108px;
-	height: 108px;
-	background-position: -108px -1296px;
+	background-position: -180px -1080px;
 }
 .char_451_robin {
-	width: 108px;
-	height: 108px;
-	background-position: -216px -1296px;
+	background-position: -270px -1080px;
 }
 .char_452_bstalk {
-	width: 108px;
-	height: 108px;
-	background-position: -324px -1296px;
+	background-position: -360px -1080px;
 }
 .char_455_nothin {
-	width: 108px;
-	height: 108px;
-	background-position: -432px -1296px;
+	background-position: -450px -1080px;
 }
 .char_456_ash {
-	width: 108px;
-	height: 108px;
-	background-position: -540px -1296px;
+	background-position: -540px -1080px;
 }
 .char_457_blitz {
-	width: 108px;
-	height: 108px;
-	background-position: -648px -1296px;
+	background-position: -630px -1080px;
 }
 .char_458_rfrost {
-	width: 108px;
-	height: 108px;
-	background-position: -756px -1296px;
+	background-position: -720px -1080px;
 }
 .char_459_tachak {
-	width: 108px;
-	height: 108px;
-	background-position: -864px -1296px;
+	background-position: -810px -1080px;
 }
 .char_469_indigo {
-	width: 108px;
-	height: 108px;
-	background-position: -972px -1296px;
+	background-position: -900px -1080px;
 }
 .char_472_pasngr {
-	width: 108px;
-	height: 108px;
-	background-position: -1080px -1296px;
+	background-position: -990px -1080px;
 }
 .char_474_glady {
-	width: 108px;
-	height: 108px;
-	background-position: -1188px -1296px;
+	background-position: -1080px -1080px;
 }
 .char_475_akafyu {
-	width: 108px;
-	height: 108px;
-	background-position: -1296px -1296px;
+	background-position: -1170px -1080px;
 }
 .char_478_kirara {
-	width: 108px;
-	height: 108px;
-	background-position: -1404px -1296px;
+	background-position: -1260px -1080px;
 }
 .char_485_pallas {
-	width: 108px;
-	height: 108px;
-	background-position: -1512px -1296px;
+	background-position: 0px -1170px;
 }
 .char_486_takila {
-	width: 108px;
-	height: 108px;
-	background-position: 0px -1404px;
+	background-position: -90px -1170px;
 }
 .char_500_noirc {
-	width: 108px;
-	height: 108px;
-	background-position: -108px -1404px;
+	background-position: -180px -1170px;
 }
 .char_501_durin {
-	width: 108px;
-	height: 108px;
-	background-position: -216px -1404px;
+	background-position: -270px -1170px;
 }
 .char_502_nblade {
-	width: 108px;
-	height: 108px;
-	background-position: -324px -1404px;
+	background-position: -360px -1170px;
 }
 .char_503_rang {
-	width: 108px;
-	height: 108px;
-	background-position: -432px -1404px;
+	background-position: -450px -1170px;
 }

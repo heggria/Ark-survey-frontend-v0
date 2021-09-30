@@ -19,7 +19,7 @@ module.exports = {
 	rules: {
 		'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
 		eqeqeq: 2,
-		semi: [1, 'never'],
+		semi: [2, 'never'],
 		quotes: [1, 'single'],
 		'comma-dangle': [
 			'error',
